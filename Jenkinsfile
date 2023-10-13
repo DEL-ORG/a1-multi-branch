@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh """
                     echo "Cloning the repo. Please wait ....................."
-                    sleep 5
+                    sleep 1
                 """
             }
         }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh """
                     echo "Building the code. Please wait ....................."
-                    sleep 5
+                    sleep 1
                 """
             }
         }
@@ -39,7 +39,7 @@ pipeline {
             steps {
                 sh """
                     echo "Scanning the code. Please wait ....................."
-                    sleep 5
+                    sleep 1
                 """
             }
         }
@@ -47,7 +47,7 @@ pipeline {
             steps {
                 sh """
                     echo "Packaging the code. Please wait ....................."
-                    sleep 5
+                    sleep 1
                 """
             }
         }
@@ -55,7 +55,7 @@ pipeline {
             steps {
                 sh """
                     echo "Building the image. Please wait ....................."
-                    sleep 5
+                    sleep 1
                 """
             }
         }
@@ -63,7 +63,7 @@ pipeline {
             steps {
                 sh """
                     echo "Pushing into Dockerhub. Please wait ....................."
-                    sleep 5
+                    sleep 1
                 """
             }
         }
@@ -71,7 +71,7 @@ pipeline {
             steps {
                 sh """
                     echo "Deploying To Swarm. Please wait ....................."
-                    sleep 5
+                    sleep 1
                 """
             }
         }
@@ -79,7 +79,7 @@ pipeline {
             steps {
                 sh """
                     echo "Clean up. Please wait ....................."
-                    sleep 5
+                    sleep 1
                 """
             }
         }
